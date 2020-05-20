@@ -1,7 +1,7 @@
 <template>  
   <div>
     <h3 v-if="meta.label">{{ meta.label }}</h3>
-    <sketch-picker :value="value" @input="test($event)" />
+    <sketch-picker :value="value" @input="$emit('input', $event)" />
   </div>
 </template>
 
@@ -16,12 +16,6 @@ module.exports = {
       type: [String, Object]
     },
     meta: Object,
-  },
-  methods: {
-    test: function (value) {
-      console.log(value);
-      this.$emit('input', value);
-    }
   }
 };
 </script>
