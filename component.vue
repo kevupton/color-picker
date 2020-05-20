@@ -17,6 +17,12 @@ module.exports = {
     },
     meta: Object,
   },
+  methods: {
+    test: function (value) {
+      console.log(value);
+      this.$emit('input', value);
+    }
+  }
 };
 </script>
 
