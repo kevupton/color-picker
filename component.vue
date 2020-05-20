@@ -8,7 +8,10 @@ module.exports = {
     "sketch-picker": node_modules['vue-color'].Sketch
   },
   props: {
-    value: [String, Object]
+    value: {
+      default: '',
+      type: [String, Object]
+    }
   },
 };
 </script>
