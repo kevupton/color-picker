@@ -1,5 +1,5 @@
 {
   "name": "color-picker",
   "component": "./component.vue",
-  "packageDependencies": ["vue-color"]
+  "packages": ["vue-color"]
 }
